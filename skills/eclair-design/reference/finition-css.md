@@ -62,6 +62,8 @@ La règle « Survols » ne change rien à la souris : elle retire seulement le s
 | Pied de page qui se confond avec la page | `.site-footer{background:var(--bg-soft)}` |
 | En-tête : séparation trop marquée sur une direction aérée | `.site-header{border-bottom-color:transparent}` |
 | Images de bannière de formats différents d'une page à l'autre | `.hero-img img{aspect-ratio:4/5;object-fit:cover}` (éditorial) ou `16/10` (côte à côte) |
+| Titres coupés par un tiret en fin de ligne sur mobile (« agence-ments ») | `h1,h2,.hero-title{hyphens:manual}` (les mots longs passent à la ligne entiers) |
+| Coins droits dans la direction mais images d'article arrondies | `.content figure img,.featured img{border-radius:var(--radius)}` |
 | Liens d'ancre du sommaire (articles longs) | `@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}` |
 | Mode sombre automatique à neutraliser pour une règle | entourer la règle de `/*dark*/ … /*/dark*/` |
 
